@@ -38,8 +38,6 @@ public class AutenticacaoViaTokenFilter extends OncePerRequestFilter {
 			autenticarCliente(token);
 		}
 		
-		System.out.println("AutenticacaoViaTokenFilter: " + token + " é valido: " + valido);
-		
 		filterChain.doFilter(request, response);
 
 	}
